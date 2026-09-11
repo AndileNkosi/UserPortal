@@ -26,7 +26,7 @@ registerForm.addEventListener("submit", async function (event) {
         }
 
     try {
-        const response = await fetch("https://andileuserportal.somee.com/api/auth/register", {
+        const response = await fetch("https://andileuserportal.somee.com/api/auth/register", { 
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
