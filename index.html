@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="notification"></div> 
+    
+<div class="container">
+
+    <h1>Create an Account</h1>
+
+    <form id="registerForm">
+
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" required>
+
+    <br><br>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" required>
+
+    <br><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <br><br>
+
+    <label for="username">Username</label>
+    <input type="text" id="username" required>
+
+    <br><br>
+
+    <label for="password">Password</label>
+
+    <div class="password-container">
+        <input type="password" id="password" required>
+        <button type="button" class="eye-button" id="togglePassword">👁</button>
+    </div>
+
+    <br>
+
+    <label for="confirmPassword">Confirm Password</label>
+
+    <div class="password-container">
+        <input type="password" id="confirmPassword" required>
+        <button type="button" class="eye-button" id="toggleConfirmPassword">👁</button>
+    </div>
+
+    <br><br>
+
+    <button type="submit">Register</button>
+
+    </form>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+
+</html>

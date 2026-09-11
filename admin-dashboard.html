@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Portal - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Admin Dashboard</h1>
+
+<p>Welcome, <span id="adminName"></span> </p>
+
+<h2>Users</h2>
+
+<div id="usersContainer"></div>
+
+<div id="editMenu" class="edit-menu">
+
+    <h2 id="editTitle">Edit User</h2>
+
+    <label for="editFirstName">First Name</label>
+    <input type="text" id="editFirstName">
+
+    <label for="editLastName">Last Name</label>
+    <input type="text" id="editLastName">
+
+    <label for="editEmail">Email</label>
+    <input type="email" id="editEmail">
+
+    <label for="editRole">Role</label>
+    <select id="editRole">
+        <option value="User">User</option>
+        <option value="Moderator">Moderator</option>
+    </select>
+
+    <br>
+
+    <button class="admin-button" onclick="saveUserChanges()">Save</button>
+
+    <button class="admin-button" onclick="closeEditMenu()">Cancel</button>
+
+</div>
+
+<br>
+
+<button id="logoutButton">Logout</button>
+
+</div>
+
+<script src="admin-dashboard.js"></script>
+
+</body>
+</html>
