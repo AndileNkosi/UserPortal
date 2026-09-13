@@ -4,7 +4,7 @@ async function loadModeratorName() {
 
     try {
         const response = await fetch(
-            "http://localhost:5257/api/auth/user",
+            "https://andileuserportal.somee.com/api/auth/user",
             {
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -34,7 +34,7 @@ async function loadUsers() {
 
     try {
         const response = await fetch(
-            "http://localhost:5257/api/admin/users",
+            "https://andileuserportal.somee.com/api/admin/users",
             {
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -119,7 +119,7 @@ async function disableUser(userId) {
 
     try {
         const response = await fetch(
-            `http://localhost:5257/api/admin/users/${userId}/disable`,
+            `https://andileuserportal.somee.com/api/admin/users/${userId}/disable`,
             {
                 method: "PUT",
                 headers: {
@@ -163,7 +163,7 @@ async function enableUser(userId) {
 
     try {
         const response = await fetch(
-            `http://localhost:5257/api/admin/users/${userId}/enable`,
+            `https://andileuserportal.somee.com/api/admin/users/${userId}/enable`,
             {
                 method: "PUT",
                 headers: {
